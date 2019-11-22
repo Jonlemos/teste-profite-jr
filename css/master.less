@@ -1,0 +1,259 @@
+@primary-color: #fff;
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: @primary-color;
+}
+
+.container {
+    margin: 0 20%
+}
+.nav-carousel{
+    position: relative;
+}
+.nav-profite {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    height: 80px;
+    .logo {
+        height: 30px;
+    }
+    .icon-person {
+        height: 18px;
+    }
+    .person-accout {
+        display: flex;
+        margin: auto 0;
+    }
+}
+
+
+.text-carousel {
+    z-index: 55;
+    position: absolute;
+    font-size: 45px;
+    top: 140px;
+    color: #fff;
+    left: 380px;
+    p {
+        line-height: 45px;
+    }
+    .hr-carousel {
+        width: 65px;
+        height: 0;
+        border: 6px solid #FF9F1C ;
+        margin-left: 0px;
+    }
+}
+.carousel-indicators {
+    .circle {
+        border-top: none;
+        border-bottom: none;
+        border-radius: 50px;
+        width: 12px;
+        height: 12px;
+        margin-right: 6px;
+        margin-left: 6px;
+    }
+}
+h2 {
+    padding-top:25px ;
+}
+.section-product{
+    height: 480px;
+}
+.hr-product {
+border:4px solid #FF9F1C;
+width: 65px;
+margin-left: 0px;
+}
+.footer-profite {
+    height: 215px;
+    background-color: #011627;
+}
+#mixedSlider {
+position: relative;
+}
+#mixedSlider .MS-content {
+white-space: nowrap;
+overflow: hidden;
+margin: 0 5%;
+}
+#mixedSlider .MS-content .item {
+display: inline-block;
+width: 216px;
+position: relative;
+vertical-align: top;
+overflow: hidden;
+height: 353px;
+white-space: normal;
+padding: 0 15px;
+margin: 0 15px;
+
+    h2 {
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #7a7a7a;
+    }
+}
+.star-avaliation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        height: 10px;
+        cursor: pointer;
+    }
+}
+#mixedSlider .MS-content .item:hover {
+    background-color: #F2F2F2;
+}
+
+@media (max-width: 991px) {
+#mixedSlider .MS-content .item {
+    width: 50%;
+}
+}
+@media (max-width: 767px) {
+#mixedSlider .MS-content .item {
+    width: 100%;
+}
+}
+#mixedSlider .MS-content .item .imgTitle {
+position: relative;
+}
+#mixedSlider .MS-content .item .imgTitle .blogTitle {
+    margin: 0;
+    text-align: left;
+    color: #252525;
+    font-style: italic;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    bottom: 0;
+    font-weight: bold;
+    padding: 0 0 2px 10px;
+}
+
+#mixedSlider .MS-content .item .imgTitle img {
+height: auto;
+width: 100%;
+padding-top: 30px;
+}
+
+#mixedSlider .MS-content .item p {
+font-size: 16px;
+margin: 2px 10px 0 5px;
+text-indent: 15px;
+}
+
+#mixedSlider .MS-content .item a {
+float: right;
+margin: 0 20px 0 0;
+font-size: 16px;
+font-style: italic;
+color: rgba(173, 0, 0, 0.82);
+font-weight: bold;
+letter-spacing: 1px;
+transition: linear 0.1s;
+}
+
+#mixedSlider .MS-content .item a:hover {
+text-shadow: 0 0 1px grey;
+}
+
+#mixedSlider .MS-controls button {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    outline: 0;
+    font-size: 50px;
+    top: 95px;
+    color: rgba(0, 0, 0, 0.4);
+    transition: 0.15s linear;
+}
+
+#mixedSlider .MS-controls button:hover {
+color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 992px) {
+
+    #mixedSlider .MS-controls button {
+    font-size: 30px;
+    }
+}
+@media (max-width: 767px) {
+
+    #mixedSlider .MS-controls button {
+        font-size: 20px;
+    }
+}
+#mixedSlider .MS-controls .MS-left {
+    left: 0px;
+}
+@media (max-width: 767px) {
+    #mixedSlider .MS-controls .MS-left {
+        left: -10px;
+    }
+}
+#mixedSlider .MS-controls .MS-right {
+right: 0px;
+}
+@media (max-width: 767px) {
+    #mixedSlider .MS-controls .MS-right {
+        right: -10px;
+    }
+}
+#basicSlider { position: relative; }
+
+#basicSlider .MS-content {
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 2%;
+    height: 50px;
+}
+  
+#basicSlider .MS-content .item {
+    display: inline-block;
+    width: 20%;
+    position: relative;
+    vertical-align: top;
+    overflow: hidden;
+    height: 100%;
+    white-space: normal;
+    line-height: 50px;
+    vertical-align: middle;
+}
+@media (max-width: 991px) {
+
+#basicSlider .MS-content .item { width: 25%; }
+}
+@media (max-width: 767px) {
+
+#basicSlider .MS-content .item { width: 35%; }
+}
+@media (max-width: 500px) {
+
+#basicSlider .MS-content .item { width: 50%; }
+}
+
+#basicSlider .MS-content .item a {
+line-height: 50px;
+vertical-align: middle;
+}
+
+#basicSlider .MS-controls button { position: absolute; }
+
+#basicSlider .MS-controls .MS-left {
+top: 35px;
+left: 10px;
+}
+
+#basicSlider .MS-controls .MS-right {
+top: 35px;
+right: 10px;
+}
